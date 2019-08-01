@@ -1,4 +1,7 @@
-# DUBBO-POSTMAN
+DUBBO-POSTMAN
+==========
+
+<img src="https://github.com/everythingbest/dubbo-postman/blob/master/gif/logo.png?raw=true" alt="dubbo postman logo" height="90px" align="right" />
 
 **DUBBO-POSTMAN**: 一个用于通过web-ui页面访问dubbo接口的工具,灵感源于
 [postman](https://www.getpostman.com/products)
