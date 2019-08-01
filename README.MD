@@ -83,3 +83,18 @@ dubbo demo创建
 注册中心添加
  <img align="center" alt="face" src="https://github.com/everythingbest/dubbo-postman/blob/master/gif/dubbo-postman-4.gif?raw=true" />
 </p>
+
+赞赏
+===============
+
+如果你觉得这个项目帮助到了你，你可以帮作者买一杯果汁表示鼓励 🍹
+<table>
+  <tr>
+      <td width="50%" align="center"><b>AliPay</b></td>
+      <td width="50%" align="center"><b>WechatPay</b></td>
+  </tr>
+  <tr>
+     <td><img src="https://github.com/everythingbest/dubbo-postman/blob/master/gif/alipay.JPG?raw=true"/></td>
+     <td><img src="https://github.com/everythingbest/dubbo-postman/blob/master/gif/wechatpay.JPG?raw=true"/></td>
+  </tr>
+</table>
