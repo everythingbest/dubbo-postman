@@ -28,20 +28,22 @@ package com.dubbo.postman.util;
  * @author everythingbest
  */
 public class CommonUtil {
-    
+
+    private final static String splitter = "_";
+
     public static String getDubboModelKey(String zk, String serviceName){
         
-        return zk + "_"+serviceName;
+        return zk + splitter+serviceName;
     }
     
     public static String getZk(String modelKey){
         
-        return modelKey.split("_")[0];
+        return modelKey.split(splitter)[0];
     }
     
     public static String getServiceName(String modelKey){
         
-        return modelKey.split("_")[1];
+        return modelKey.split(splitter)[1];
     }
 
     /**
@@ -50,7 +52,7 @@ public class CommonUtil {
      * @param zk
      * @return
      */
-    public static String buildZkUrl(String zk){
+    public static String buildZkUrl(final String zk){
         
         String zkRegis = "";
         

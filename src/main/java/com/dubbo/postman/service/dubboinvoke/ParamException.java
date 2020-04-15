@@ -30,7 +30,7 @@ package com.dubbo.postman.service.dubboinvoke;
  */
 public class ParamException extends Exception {
 
-    private int code;
+    private final int code;
 
     public ParamException(String msg){
 

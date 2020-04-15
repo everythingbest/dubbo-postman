@@ -40,11 +40,11 @@ import java.net.URL;
  */
 public class MavenProcessor {
 
-    private Logger logger = LoggerFactory.getLogger(MavenProcessor.class);
+    private final static Logger logger = LoggerFactory.getLogger(MavenProcessor.class);
 
-    private String nexusUrl;
+    private final String nexusUrl;
 
-    private String fileBasePath;
+    private final String fileBasePath;
 
     public MavenProcessor(String nexusUrl, String fileBasePath) {
 
