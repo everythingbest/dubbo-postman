@@ -196,7 +196,7 @@
     </dependencies>
 
     <build>
-        <finalName>dubbo-postman</finalName>
+        <finalName>rpc-postman</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -229,7 +229,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>com.dubbo.postman.Main</mainClass>
+                    <mainClass>com.rpcpostman.Main</mainClass>
                 </configuration>
             </plugin>
         </plugins>

@@ -26,8 +26,8 @@
 
 <configuration>
 
-	<property name="project.name" value="dubbo-postman"/>
-	<property name="local.logging.path" value="C:/tmp/logs"/>
+	<property name="project.name" value="rpc-postman"/>
+	<property name="local.logging.path" value="/Users/user/tmp/logs"/>
 	<property name="logging.file.path" value="${local.logging.path}/${project.name}"/>
 	<property name="logging.file.name" value="${logging.file.path}/${project.name}.log"/>
 	<property name="logging.file.warn.name" value="${logging.file.path}/${project.name}-warn.log"/>

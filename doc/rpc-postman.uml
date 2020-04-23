@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.dubbo.postman.service.registry.Register</OriginalElement>
+  <nodes>
+    <node x="0.0" y="131.0">com.dubbo.postman.service.registry.impl.AbstractRegisterFactory</node>
+    <node x="0.0" y="842.0">com.dubbo.postman.service.creation.impl.DubboCreator</node>
+    <node x="393.0" y="0.0">com.dubbo.postman.service.repository.Repository</node>
+    <node x="529.0" y="454.0">com.dubbo.postman.service.registry.Register</node>
+    <node x="529.0" y="585.0">com.dubbo.postman.service.registry.impl.ZkRegister</node>
+    <node x="375.0" y="818.0">com.dubbo.postman.service.load.impl.JarLocalFileLoader</node>
+    <node x="343.0" y="107.0">com.dubbo.postman.service.repository.redis.RedisRepository</node>
+    <node x="0.0" y="711.0">com.dubbo.postman.service.creation.Creator</node>
+    <node x="0.0" y="1077.0">com.dubbo.postman.service.invocation.impl.DubboConverter</node>
+    <node x="16.5" y="306.0">com.dubbo.postman.service.registry.impl.DubboRegisterFactory</node>
+    <node x="0.0" y="585.0">com.dubbo.postman.service.invocation.impl.DubboInvoker</node>
+    <node x="497.5" y="711.0">com.dubbo.postman.service.load.Loader</node>
+    <node x="43.5" y="0.0">com.dubbo.postman.service.registry.RegisterFactory</node>
+    <node x="80.5" y="454.0">com.dubbo.postman.service.invocation.Invoker</node>
+    <node x="114.5" y="968.0">com.dubbo.postman.service.invocation.Converter</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.dubbo.postman.service.invocation.impl.DubboInvoker" target="com.dubbo.postman.service.invocation.Invoker">
+      <point x="0.0" y="-40.5" />
+      <point x="0.0" y="40.5" />
+    </edge>
+    <edge source="com.dubbo.postman.service.creation.impl.DubboCreator" target="com.dubbo.postman.service.creation.Creator">
+      <point x="0.0" y="-40.5" />
+      <point x="0.0" y="40.5" />
+    </edge>
+    <edge source="com.dubbo.postman.service.registry.impl.ZkRegister" target="com.dubbo.postman.service.registry.Register">
+      <point x="0.0" y="-40.5" />
+      <point x="0.0" y="40.5" />
+    </edge>
+    <edge source="com.dubbo.postman.service.load.impl.JarLocalFileLoader" target="com.dubbo.postman.service.load.Loader">
+      <point x="0.0" y="-40.5" />
+      <point x="0.0" y="28.5" />
+    </edge>
+    <edge source="com.dubbo.postman.service.repository.redis.RedisRepository" target="com.dubbo.postman.service.repository.Repository">
+      <point x="0.0" y="-117.5" />
+      <point x="0.0" y="28.5" />
+    </edge>
+    <edge source="com.dubbo.postman.service.invocation.impl.DubboConverter" target="com.dubbo.postman.service.invocation.Converter">
+      <point x="0.0" y="-29.5" />
+      <point x="0.0" y="29.5" />
+    </edge>
+    <edge source="com.dubbo.postman.service.registry.impl.DubboRegisterFactory" target="com.dubbo.postman.service.registry.impl.AbstractRegisterFactory">
+      <point x="0.0" y="-51.5" />
+      <point x="0.0" y="62.5" />
+    </edge>
+    <edge source="com.dubbo.postman.service.registry.impl.AbstractRegisterFactory" target="com.dubbo.postman.service.registry.RegisterFactory">
+      <point x="0.0" y="-62.5" />
+      <point x="0.0" y="40.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7880622837370242" x="467.0" y="578.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

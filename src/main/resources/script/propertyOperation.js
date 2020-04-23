@@ -23,6 +23,7 @@
  */
 
 function setProp(req,name,value){
+    var req = req.left;
     if(!req){
         rst.put("被替换属性对象不能为空",req);
         return false;
@@ -32,7 +33,7 @@ function setProp(req,name,value){
         rst.put(errorName,"替换属性必须指定");
         return false;
     }
-    var obj = JSON.parse(req.body);
+    var obj = JSON.parse(req.dubboParam);
     var array = name.split(".");
     var length = array.length;
     var findObj = obj;
@@ -64,12 +65,13 @@ function setProp(req,name,value){
         return false;
     }else{
         findObj[lastItem] = value;//替换
-        req.body = JSON.stringify(obj);
+        req.dubboParam = JSON.stringify(obj);
     }
     return true;
 }
 
 function getProp(req,name){
+    var req = req.left;
     if(!req){
         rst.put("属性对象不能为空",req);
         return false;
@@ -79,7 +81,7 @@ function getProp(req,name){
         rst.put(errorName,"属性名称必须指定");
         return false;
     }
-    var obj = JSON.parse(req.body);
+    var obj = JSON.parse(req.dubboParam);
     var array = name.split(".");
     var length = array.length;
     var findObj = obj;

@@ -1,0 +1,20 @@
+@startuml
+
+
+(*) --> "创建服务"
+--> "1.根据请求的参数里面的服务元数据从\n服务模型表里提取对应的服务模型"
+--> "2.从nexus下载api.jar和api.pom"
+--> "3.通过embededmaven 执行api.pom的依赖下载"
+--> "4.自定义classloader把依赖路径添加到classpath，加载api.jar"
+--> "填充刚才解析的运行时class类数据到1的服务模型属性里面"
+If "创建成功" then
+--> [Yes] "存储新服务"
+--> "返回成功"
+--> "结束"
+else
+--> [No] "返回错误消息"
+--> "结束"
+Endif
+--> (*)
+
+@enduml

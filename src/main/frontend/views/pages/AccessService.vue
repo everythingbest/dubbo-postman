@@ -538,17 +538,21 @@
                 let params = {};
                 if(onIp == true){
                     params = {
-                        "zk":ezk,
+                        "cluster":ezk,
+                        "serviceName":this.pageArray[this.pageIndex].serviceName,
+                        "interfaceKey":infKey,
+                        "methodName":this.pageArray[this.pageIndex].methodName,
                         "dubboIp":eip,
-                        "path":path,
-                        "content":this.pageArray[this.pageIndex].request,
+                        "dubboParam":this.pageArray[this.pageIndex].request,
                     }
                 }else{
                     params = {
-                        "zk":ezk,
+                        "cluster":ezk,
+                        "serviceName":this.pageArray[this.pageIndex].serviceName,
+                        "interfaceKey":infKey,
+                        "methodName":this.pageArray[this.pageIndex].methodName,
                         "dubboIp":'',
-                        "path":path,
-                        "content":this.pageArray[this.pageIndex].request,
+                        "dubboParam":this.pageArray[this.pageIndex].request,
                     }
                 }
 
@@ -674,7 +678,7 @@
                     "zkAddress":this.pageArray[this.pageIndex].zk,
                     "serviceName":this.pageArray[this.pageIndex].serviceName,
                     "className":this.pageArray[this.pageIndex].provider,
-                    "providerName":infKey,
+                    "interfaceKey":infKey,
                     "methodName":this.pageArray[this.pageIndex].methodName,
                     "requestValue":this.pageArray[this.pageIndex].request,
                     "responseValue":this.pageArray[this.pageIndex].response,
