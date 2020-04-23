@@ -59,7 +59,7 @@ export default {
       })
       const first = matched[0]
       if (first) {
-        matched = [{ path: '/access/index', meta: { title: 'DUBBO-POSTMAN' }}].concat(matched)
+        matched = [{ path: '/access/index', meta: { title: 'RPC-POSTMAN' }}].concat(matched)
       }
       this.levelList = matched
     },

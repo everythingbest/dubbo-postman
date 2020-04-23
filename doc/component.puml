@@ -1,0 +1,45 @@
+@startuml
+
+package "scenetest" {
+[SceneTester]
+}
+
+package "rpcrequest" {
+[Rpcrequest]
+}
+
+package "context" {
+[InvokeContext]
+SceneTester --> [InvokeContext]
+Rpcrequest --> [InvokeContext]
+}
+
+package "creation" {
+[Creator]
+}
+
+package "load" {
+Creator --> [Loader]
+InvokeContext --> [Loader]
+}
+
+package "registry" {
+Creator --> [Register]
+}
+
+package "repository" {
+Creator --> [Repository]
+}
+
+package "invocation" {
+[Invoker]
+Invoker -->[Convert]
+SceneTester --> [Invoker]
+}
+
+package "maven" {
+Creator --> [mavener]
+}
+
+
+@enduml

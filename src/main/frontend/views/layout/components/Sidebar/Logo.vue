@@ -48,7 +48,7 @@ export default {
   },
   data() {
     return {
-      title: 'DUBBO-POSTMAN',
+      title: 'RPC-POSTMAN',
       logo: '@/assets/logo.png'
     }
   }
