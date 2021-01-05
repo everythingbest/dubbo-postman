@@ -14,7 +14,7 @@
     "vue-codemirror": "4.0.5",
     "codemirror": "^5.10.0",
     "vue-table-with-tree-grid": "0.2.4",
-    "axios": "0.18.0",
+    "axios": "0.21.1",
     "echarts": "^3.3.2",
     "element-ui": "2.4.11",
     "font-awesome": "^4.7.0",
