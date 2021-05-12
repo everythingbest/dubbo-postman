@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "vue-codemirror": "4.0.5",
-    "codemirror": "^5.10.0",
+    "codemirror": "^5.58.2",
     "vue-table-with-tree-grid": "0.2.4",
     "axios": "0.18.0",
     "echarts": "^3.3.2",
